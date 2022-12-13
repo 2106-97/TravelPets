@@ -1,0 +1,482 @@
+li {list-style-type: none;}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: auto;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+body {
+    background-color: #f3dbc3;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.logo {
+    width: 90px;
+    margin-left: 40px;
+}
+
+nav {
+
+
+    font-family: cursive;
+    background-color: #009b72;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#intro {
+    padding-top: 50px;
+}
+
+#Nosotros {
+    padding-top: 100px;
+}
+
+#Servicios {
+    padding-top: 100px;
+}
+
+#clientes {
+    padding-top: 100px;
+}
+
+#productos {
+    padding-top: 100px;
+}
+
+.nav-list {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #79e6b8;
+    font-weight: bold;
+}
+
+a:active {
+    text-decoration: none;
+    color: #2bbde2;
+    font-weight: bold;
+}
+
+.fotoprincipal {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    background-color: #009b72
+}
+
+.tabla .footer {
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tabla #redes {
+    width: 25%;
+    display: block;
+}
+
+.tabla .lista-logos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tabla #mapa {
+    width: 50%;
+}
+
+.tabla #mapa iframe {
+    display: block;
+    width: 75%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
+.tabla #contacto {
+    width: 25%;
+    float: right;
+
+}
+
+.tabla ul {
+    list-style: none;
+    text-align: left;
+}
+
+.tabla ul li {
+    margin-bottom: 10px;
+}
+
+.tabla .logo-redes {
+    width: 30px;
+    height: 30px;
+}
+
+.COPYRIGHT {
+    text-align: center;
+    background-color: rgb(49, 41, 41);
+    text-align: center;
+    color: rgb(242, 239, 245);
+    margin: 5px;
+    padding: 5px;
+}
+
+.tabla .columna {
+    position: relative;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 380px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px 20px;
+    height: 50%;
+    margin-top: 70px;
+    border: 2px salmon;
+}
+
+.card figure {
+    margin-top: -50px;
+}
+
+.card img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card_productos {
+    position: relative;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+}
+
+.card_productos .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card_productos .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    text-shadow: 0 5px 10px #000;
+}
+
+.card_productos .front figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: #fefefe;
+    background: rgb(7, 118, 128);
+    text-align: center;
+}
+
+.card_productos .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(7, 118, 128);
+    padding: 15px;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card_productos .back figcaption {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card_productos .back p {
+    letter-spacing: 1px;
+}
+
+.card_productos:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card_productos:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.card p cite {
+    color: rgb(5, 128, 139);
+    text-align: right;
+    display: block;
+}
+
+.tabla {
+    display: table;
+    width: 100%;
+}
+
+.tabla .Imagenesdeproductos {
+    float: left;
+    width: 25%;
+}
+
+.tabla .fila {
+    display: flex;
+    width: 100%;
+}
+
+.centrado {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.tabla .columna {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    background-color: #fefefe;
+    padding: 4em 3em;
+    border-radius: 10px;
+}
+
+.display-block {
+    display: block;
+}
+
+.align-top {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+
+.input {
+    display: block;
+    margin: auto;
+}
+
+.boton {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #009b72;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(11, 155, 171);
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form input[type="submit"]:active {
+    background-color: rgb(10, 41, 85);
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: none;
+    display: block;
+}
+
+.manitas {
+    text-align: center;
+    font-size: larger;
+}
+
+.display-block {
+    display: block;
+}
+
+.align-top {
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+
+.fuerte {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.textocard {
+    font-size: larger;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: large;
+}
+
+.right {
+    color: white;
+    text-align: right;
+    font-size: x-large;
+}
+
+.contac {
+    font-family: cursive;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+.cent {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.Cupon {
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
+
+}
+
+.perrito {
+    margin-top: 240px;
+}
+
+.conocenos {
+    margin-top: 10px;
+}
+
+.parrafo {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.btn-flotante {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: rgb(22, 145, 61);
+    padding: 18px 30px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante:hover {
+    background-color: rgb(7, 118, 128);
+    color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+.btn-flotante {
+    font-size: 14px;
+    padding: 12px 20px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-flotante:active {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 241, 243);
+    font-size: large;
+}
